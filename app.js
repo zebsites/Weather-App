@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         coordRequest.onload = ()=>{
             var lat = coordRequest.response.lat;
             var lon = coordRequest.response.lon;
-            console.log(lat, lon)
+            console.log(coordRequest.response.lat)
         }
 
 
