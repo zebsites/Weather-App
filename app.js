@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         coordRequest.open('GET', `https://api.openweathermap.org/geo/1.0/zip?zip=${zip},US&appid=17abed46c26a1d3232c55db9a7274603`);
         coordRequest.send();
         coordRequest.onload = ()=>{
-            var lat = coordRequest.response.lat;
-            var lon = coordRequest.response.lon;
-            console.log(coordRequest.response.lat)
+            console.log(JSON.parse(coordRequest.response));
         }
 
 
